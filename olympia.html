@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.svg" />
+
+    <title>Welcome To Olympia</title>
+  </head>
+  <body>
+    <!--|> NAVBAR  -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+      <div class="container shadow-effect-in p-3">
+        <!-- []LOGO -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="" width="40" />
+        </a>
+
+        <!--[] HAMBURGER ICON -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--[] MENU LIST  -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <!--|| HOME  -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <!--|| CITIES  -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cities
+              </a>
+              <!-- [] list -->
+              <ul
+                class="dropdown-menu rounded-3 bg-body border-0 p-4 text-lg-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-3 mx-0 rounded-3"
+                    href="seattle.html"
+                  >
+                    Seattle
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-2 mx-0 rounded-3"
+                    href="olympia.html"
+                  >
+                    Olympia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-2 mx-0 rounded-3"
+                    href="tacoma.html"
+                  >
+                    Tacoma
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--|| ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+
+            <!--||GALLERY   -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#gallery">Gallery</a>
+            </li>
+
+            <!--|| CONTACT  -->
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-success text-white px-4 mx-4"
+                href="contact.html"
+                >Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--|> HEADER SECTION -->
+    <header class="tacoma-header py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--[] LEFT SIDE OF HEADER -->
+          <div class="col-lg-8 col-md-12 p-5">
+            <!-- HEADING -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <span
+                  class="badge rounded-3 text-uppercase p-2 shadow-input text-primary fs-4 mb-3"
+                  >Urban</span
+                >
+                <span
+                  class="badge rounded-3 text-uppercase p-2 shadow-input text-success fs-4 mb-3"
+                  >capital</span
+                >
+
+                <h1 class="text-decor mb-2">Olympia, Washington</h1>
+                <p class="lead mb-3">
+                  Located in the western region of Washington State
+                </p>
+                <hr class="hr-heading" />
+              </div>
+            </div>
+
+            <!-- NUMBERS ROW 1  -->
+            <div class="row p-5 shadow-effect-in text-center mt-4">
+              <!-- || STAT 1 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="1859"></h2>
+                <p class="text-success fw-semibold">Year Incorporated</p>
+              </div>
+
+              <!-- || STAT 2 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="56200"></h2>
+                <p class="text-success fw-semibold">Population</p>
+              </div>
+
+              <!-- || STAT 3 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="73851"></h2>
+                <p class="text-success fw-semibold">Average Income</p>
+              </div>
+
+              <!-- || STAT 4 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="21"></h2>
+                <p class="text-success fw-semibold">Area (Sq Miles)</p>
+              </div>
+            </div>
+          </div>
+
+          <!--[] RIGHT SIDE OF HEADER -->
+          <div class="col-lg-4 col-md-12 p-4">
+            <div class="image-item">
+              <img
+                src="images/olympia-header.jpg"
+                alt="olympia capital building"
+              />
+              <div class="overlay"></div>
+              <a
+                href="https://pixabay.com/photos/statue-monument-statehouse-416068/"
+                class="image-source"
+                title="View Image"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-link mx-2 icon-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--|>INTRO  -->
+      <section class="intro mt-5 pb-6">
+        <div class="container">
+          <div class="row">
+            <h5 class="text-center">
+              <span
+                class="badge bg-primary rounded-3 text-uppercase p-2 shadow-effect-out"
+              >
+                popular places
+              </span>
+            </h5>
+
+            <div class="col-lg-8 offset-lg-2 text-center">
+              <h2>
+                Discover the <span class="text-success">Beauty</span> of olympia
+              </h2>
+              <p class="fs-5">
+                Olympia, the capital of Washington State, is known for its
+                stunning landscapes, rich history, and vibrant culture. Visitors
+                can explore historic sites, enjoy beautiful parks, and
+                experience local arts and food scenes. Whether you're interested
+                in nature, history, or shopping, Olympia has something for
+                everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|> place 1 -->
+      <section class="place">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4>
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place I
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">01</span> Washington State
+                  Capital
+                  <a href="https://capitol.wa.gov/">
+                    <i class="fa-solid fa-eye text-success"></i>
+                  </a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+                <p class="lead">
+                  The Washington State Capitol is home to beautiful historic
+                  buildings and monuments. Explore the grand Legislative
+                  Building, the Governor's Mansion, and the Temple of Justice.
+                  Visitors can take guided or self-guided tours to learn about
+                  the state’s history while enjoying unique art pieces and
+                  memorials throughout the campus.
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://capitol.wa.gov/tours' target='_blank'>Capitol Campus</a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/olympia-place-1.jpg"
+                width="100%"
+                alt="olympia capital building "
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://blogs.microsoft.com/on-the-issues/2024/04/02/washington-state-legislature-2024/"
+                  class="btn button-shadow btn-lg"
+                  >Photo by Colleen Kerr
+                  <i class="fa-solid fa-image mx-2 text-success"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|> place 2 -->
+      <section class="place mt-6">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/olympia-mall.jpg"
+                width="100%"
+                alt="capital Mall"
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://www.facebook.com/photo.php?fbid=909613204689197&set=pb.100069215766081.-2207520000&type=3"
+                  class="btn button-shadow btn-lg"
+                  >Phone by Capital Mall
+                  <i class="fa-solid fa-image mx-2 text-success"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4>
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place II
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">02</span> Capital Mall
+                  <a href="https://capitalmallolympia.com/">
+                    <i class="fa-solid fa-eye text-success"></i>
+                  </a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+
+                <p class="lead">
+                  Capital Mall is the perfect spot for shopping, dining, and
+                  entertainment. With over 100 stores, restaurants, and a
+                  14-screen theater, there's something for everyone. The mall
+                  also supports local artists and small businesses, making it a
+                  vibrant place to visit.
+
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://www.experienceolympia.com/blog/capitol-mall/' target='_blank'>Capital Mall</a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!--|> place 3 -->
+      <section class="place pt-6">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4 class="text-start">
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place III
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">03</span> Puget Sound
+                  Estuarium
+                  <a href="https://pugetsoundestuarium.org/">
+                    <i class="fa-solid fa-eye text-success"></i>
+                  </a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+
+                <p class="lead">
+                  The Puget Sound Estuarium is a small aquarium showcasing
+                  marine life where freshwater and saltwater meet. See sea
+                  stars, anemones, and other fascinating creatures up close.
+                  Join guided programs like Pier Peer or Meet the Beach for a
+                  hands-on experience with marine habitats.
+
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://www.experienceolympia.com/directory/puget-sound-estuarium/' target='_blank'>Puget Sound Estuarium</a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/olympia-Estuarium.jpg"
+                width="100%"
+                alt="picture of Space needle "
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://www.facebook.com/photo/?fbid=554731176662936&set=a.345628217573234"
+                  class="btn button-shadow btn-lg"
+                  >Photo by Puget Sound Estuarium
+                  <i class="fa-solid fa-image mx-2 text-success"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- |>Gallery -->
+      <section class="gallery my-6">
+        <div class="container shadow-effect-in p-5">
+          <!--[] HEADING-->
+          <div class="row mb-4">
+            <h2 class="text-decor">Olympia Gallery</h2>
+            <hr class="hr-heading" />
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <!-- img 1-->
+              <div class="image-item">
+                <img
+                  src="images/olympia-img-1.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="downtown olympia"
+                />
+                <a
+                  href="https://www.pexels.com/@john-callery-3749962/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+
+                <div class="overlay"></div>
+              </div>
+              <!-- img 2-->
+              <div class="image-item">
+                <img
+                  src="images/olympia-img-2.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Full Moon Next to United States Capitol Dome"
+                />
+
+                <a
+                  href="https://www.pexels.com/@tiohugo/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- img 3-->
+              <div class="image-item">
+                <img
+                  src="images/olympia-img-3.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="A road through a forest with trees on both sides"
+                />
+                <a
+                  href="https://www.pexels.com/@joshuaworoniecki/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+              <!-- img 4-->
+              <div class="image-item">
+                <img
+                  src="images/olympia-img-4.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Motorboats and Yachts at Marina"
+                />
+                <a
+                  href="https://www.pexels.com/@townsend-walton-6231368/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- img 5-->
+              <div class="image-item">
+                <img
+                  src="images/olympia-img-5.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Full Moon over City"
+                />
+                <a
+                  href="https://www.pexels.com/@john-callery-3749962/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+              <!-- img 6-->
+              <div class="image-item">
+                <img
+                  src="images/olympia-img-6.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="A Water Fountain in the Park"
+                />
+                <a
+                  href="https://www.pexels.com/@greg-thames-12409424/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--|> FOOTER  -->
+    <footer class="footer-dark text-white py-5 bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h5 class="text-primary">Menu</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h5 class="text-primary">Cities</h5>
+            <ul class="list-unstyled">
+              <li><a href="seattle.html">Seattle</a></li>
+              <li><a href="olympia.html">Olympia</a></li>
+              <li><a href="tacoma.html">Tacoma</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <p>
+              <img src="images/logo.svg" alt="logo" width="30" class="me-2" />
+
+              My name is Ali Aljanabi, a software engineering student at WGU.
+              I’m passionate about technology and eager to apply my skills in
+              real-world projects, focusing on software development and
+              problem-solving.
+            </p>
+          </div>
+          <div class="col item social mt-5">
+            <a href="#" class="icon-link"><i class="icon fab fa-github"></i></a
+            ><a href="#" class="icon-link"><i class="icon fab fa-x"></i></a
+            ><a href="#" class="icon-link"
+              ><i class="icon fab fa-snapchat"></i></a
+            ><a href="#" class="icon-link"
+              ><i class="icon fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <p class="copyright m-4">Copyright © 2024, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!--|> TO-TOP BTN  -->
+    <button id="to-top" class="to-top-btn" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="js/replaceme.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

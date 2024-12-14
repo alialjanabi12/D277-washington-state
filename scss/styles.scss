@@ -1,0 +1,298 @@
+html {
+  scroll-behavior: smooth;
+}
+
+// |> Box Shadows
+$shadow-out: -6px -6px 8px rgba(255, 255, 255, 0.9),
+  5px 5px 8px rgba(0, 0, 0, 0.07);
+$shadow-in: inset 4px 4px 8px #bebebe, inset -4px -4px 8px #ffffff;
+$shadow-input: inset -2px -2px 6px rgba(255, 255, 255, 0.7),
+  inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+  inset 2px 2px 2px rgba(255, 255, 255, 0.075),
+  inset 2px 2px 4px rgba(0, 0, 0, 0.15);
+
+// |> NAVBAR
+.navbar {
+  transition: all 0.5s ease-in-out;
+  &-sticky {
+    opacity: 0.9;
+    box-shadow: $shadow-out;
+  }
+  .nav-link:hover {
+    color: #6e8898;
+    transform: scaleY(1.1);
+  }
+  .dropdown-item {
+    box-shadow: $shadow-input;
+  }
+}
+
+// |> HEADING LINE
+.hr-heading {
+  display: inline-block;
+  width: 4.5rem;
+  height: 0.2rem;
+  margin-top: 0;
+  border: none;
+  background-color: var(--bs-primary);
+  opacity: 1;
+}
+
+// |> MAP (ABOUT US)
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 650px;
+  width: 100%;
+  border: none;
+  border-radius: 20px;
+}
+
+// |> FOOTER
+.footer-dark {
+  ul {
+    padding: 0;
+    line-height: 1.6;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      opacity: 0.6;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .item.text p {
+    opacity: 0.6;
+  }
+
+  .item.social {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+    opacity: 0.3;
+  }
+}
+
+// |> CONTACT
+.feedback {
+  float: left;
+  width: 30%;
+  text-align: center;
+  box-shadow: $shadow-out;
+  padding: 10px;
+  border-radius: 15% 0 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-contact {
+  float: left;
+  width: 70%;
+  box-shadow: $shadow-in;
+  padding: 50px;
+  border-radius: 0 15% 20px 0;
+}
+
+.contact::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// |> EFFECTS
+.primary-effect::before {
+  background-color: var(--bs-primary);
+}
+
+.neu-effect {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 35%;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    opacity: 0.4;
+    position: absolute;
+    border-radius: 30px;
+    z-index: 0;
+  }
+  // Top-right effect
+  &::before {
+    top: -15%;
+    right: -5%;
+  }
+  // Bottom-left effect
+  &::after {
+    bottom: -15%;
+    left: -5%;
+  }
+}
+
+.shadow-effect-out {
+  box-shadow: $shadow-out;
+  border-radius: 20px;
+}
+
+.shadow-effect-in {
+  box-shadow: $shadow-in;
+  border-radius: 20px;
+}
+
+.shadow-input {
+  box-shadow: $shadow-input;
+  border-radius: 15px;
+}
+
+// |> IMAGES & LINKING
+.image-item {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+    border-radius: 20px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover .overlay {
+    opacity: 0;
+  }
+}
+.image-source {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  z-index: 2;
+}
+
+
+
+// |> BUTTONS
+.button-white,
+.button-yellow {
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  box-shadow: $shadow-input;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #6e8898;
+  }
+
+  &:active {
+    box-shadow: $shadow-out;
+  }
+}
+
+.button-yellow {
+  background-color: var(--bs-primary);
+}
+
+.button-shadow {
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: $shadow-input;
+  transition: all 0.25s ease;
+
+  &:hover {
+    color: #6e8898;
+    box-shadow: $shadow-out;
+  }
+}
+
+// |> TO TOP BUTTON
+.to-top-btn {
+  position: fixed;
+  z-index: 200;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  width: 52px;
+  height: 52px;
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  background-color: var(--bs-primary);
+  box-shadow: $shadow-input;
+  cursor: pointer;
+  transition: all 0.5 ease-in-out;
+
+  &:hover {
+    background-color: var(--bs-secondary);
+  }
+}
+
+.show {
+  opacity: 1;
+}
+
+//|> Icon
+.icon-link {
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+
+  margin: 0 8px;
+  color: #fff;
+  opacity: 0.75;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+    box-shadow: $shadow-input;
+  }
+}
+
+// |> LARGE TEXT
+.text-xl {
+  font-size: 60px;
+}
+
+// |> DECORATIVE TEXT
+.text-decor {
+  color: #c6c6c6;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5),
+    -2px -2px 2px rgba(00, 00, 00, 0.2);
+}

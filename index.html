@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.svg" />
+
+    <title>Welcome To Washington</title>
+  </head>
+  <body>
+    <!--|> NAVBAR  -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+      <div class="container shadow-effect-in p-3">
+        <!-- []LOGO -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="" width="40" />
+        </a>
+
+        <!--[] HAMBURGER ICON -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--[] MENU LIST  -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <!--|| HOME  -->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <!--|| CITIES  -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cities
+              </a>
+              <!-- [] list -->
+              <ul
+                class="dropdown-menu rounded-3 bg-body border-0 p-4 text-lg-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-3 mx-0 rounded-3"
+                    href="seattle.html"
+                  >
+                    Seattle
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-2 mx-0 rounded-3"
+                    href="olympia.html"
+                  >
+                    Olympia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-2 mx-0 rounded-3"
+                    href="tacoma.html"
+                  >
+                    Tacoma
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--|| ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+
+            <!--||GALLERY   -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#gallery">Gallery</a>
+            </li>
+
+            <!--|| CONTACT  -->
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-success text-white px-4 mx-4"
+                href="contact.html"
+                >Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--|> HEADER SECTION -->
+    <header class="header primary-effect mt-6">
+      <div class="container d-flex">
+        <div class="row">
+          <!--[] LEFT SIDE OF HEADER -->
+          <div class="col-lg-8 pt-5">
+            <h1 class="mt-5 text-xl">Your Journey Begins in</h1>
+            <h1>
+              <span class="text-xl text-decor fw-bold" id="typing-text"></span>
+            </h1>
+            <p class="lead mt-4">
+              Washington State is a land of natural wonders, from lush forests
+              to bustling cities. Explore the iconic Space Needle, hike the
+              Olympic National Park, and experience the vibrant culture of
+              Seattle, Olympia, and Tacoma.
+            </p>
+            <a href="#location" class="btn button-yellow btn-lg"
+              >View Location</a
+            >
+            <a href="#cities" class="btn button-white btn-lg">Visit Cities</a>
+          </div>
+
+          <!--[] RIGHT SIDE OF HEADER -->
+          <div class="col-lg-4 p-2">
+            <div class="image-item">
+              <img
+                src="images/wa-header.jpg"
+                alt="Cityscape of Seattle and the View of Mount Rainier, United States"
+              />
+              <div class="overlay"></div>
+              <a
+                href="https://www.pexels.com/@taylen-lundequam-393935458/"
+                class="image-source"
+                title="View Image"
+              >
+                <i class="fa-solid fa-link mx-2 icon-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--|>STATS  -->
+      <section id="stats" class="stats container shadow-effect-in">
+        <div class="row py-4 my-6">
+          <!--[]STAT 1  -->
+          <div class="col-lg-3 col-md-6 text-center">
+            <h2 class="counter text-xl text-decor" data-target="120000 "></h2>
+            <p class="lead text-success fw-semibold">State Parks Covering</p>
+          </div>
+
+          <!--[]STAT 2  -->
+          <div class="col-lg-3 col-md-6 text-center">
+            <h2 class="counter text-xl text-decor" data-target=" 71362"></h2>
+            <p class="lead text-success fw-semibold">Land Area</p>
+          </div>
+
+          <!--[]STAT 3  -->
+          <div class="col-lg-3 col-md-6 text-center">
+            <h2 class="counter text-xl text-decor" data-target=" 70439 "></h2>
+            <p class="lead text-success fw-semibold">
+              miles of rivers &amp; streams​
+            </p>
+          </div>
+
+          <!--[]STAT 4  -->
+          <div class="col-lg-3 col-md-6 text-center">
+            <h2 class="counter text-xl text-decor" data-target="14411"></h2>
+            <p class="lead text-success fw-semibold">Tallest Mountain (ft)</p>
+          </div>
+        </div>
+      </section>
+
+      <!--|>QUOTE I  -->
+      <section class="quote bg-secondary neu-effect py-6">
+        <div class="container position-relative">
+          <div class="row">
+            <h5 class="text-center">
+              <span
+                class="badge bg-primary rounded-3 text-uppercase p-2 shadow-effect-out"
+              >
+                quote I
+              </span>
+            </h5>
+            <div class="col-lg-8 offset-lg-2 text-center">
+              <h2 class="text-decor">The Beauty of Washington in Quotes</h2>
+              <p class="fs-5 fst-italic">
+                “A lot of Washington state is beautiful. You have just tons of
+                mountains, beautiful bodies of water, you have a lot of rolling
+                hills in eastern Washington. I'm biased, obviously, but there's
+                not a lot of places in the world that are like where I grew up.”
+              </p>
+              <div class="fw-bold fs-5 mt-2">
+                Joe Harris
+                <i
+                  class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                  data-bs-placement="bottom"
+                  title="This Quote is from : <a href='https://www.brainyquote.com/quotes/joe_harris_1138440?src=t_washington_state' target='_blank'> Source</a>"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="click"
+                >
+                </i>
+              </div>
+
+              <div>American - Athlete</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|>ABOUT -->
+      <section class="about pt-6" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 shadow-effect-out mx-2 p-5">
+              <h2>About <span class="text-primary">Washington</span></h2>
+              <hr class="hr-heading" />
+              <p class="lead">
+                Washington State is famous for its beautiful landscapes. From
+                the tall mountains and green forests to the clear coastlines,
+                there's something for everyone. The state has many parks,
+                wildlife, and different types of weather, from rainy forests to
+                dry deserts. Cities like Seattle are known for their technology,
+                including companies like Microsoft and Amazon. Whether you love
+                nature or the city life, Washington has it all.
+              </p>
+            </div>
+
+            <!--[]  ASIDE I-->
+            <aside class="aside-1 col-lg-4 d-flex flex-column">
+              <h5>
+                <span
+                  class="badge bg-success rounded-3 text-uppercase p-2 mb-3 shadow-effect-out"
+                >
+                  facts
+                </span>
+              </h5>
+              <ol class="list-unstyled">
+                <li class="list-item d-flex mb-3">
+                  <i class="fas fa-check text-primary fa-2x mx-4"></i>
+                  <p>
+                    Washington is home to Mount Rainier, the highest peak in the
+                    state.
+                  </p>
+                </li>
+                <li class="list-item d-flex mb-3">
+                  <i class="fas fa-check text-primary fa-2x mx-4"></i>
+                  <p>
+                    Seattle is known for being a big tech city with companies
+                    like Microsoft and Amazon.
+                  </p>
+                </li>
+                <li class="list-item d-flex mb-3">
+                  <i class="fas fa-check text-primary fa-2x mx-4"></i>
+                  <p>
+                    The Columbia River Gorge is famous for its beautiful
+                    waterfalls.
+                  </p>
+                </li>
+                <li class="list-item d-flex mb-3">
+                  <i class="fas fa-check text-primary fa-2x mx-4"></i>
+                  <p>
+                    Washington is the top producer of apples in the U.S. and has
+                    great wine.
+                  </p>
+                </li>
+              </ol>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!--|>CITIES -->
+      <section class="cities my-6" id="cities">
+        <div class="container shadow-effect-in p-5">
+          <!-- heading -->
+          <div class="row mb-4">
+            <h2>
+              Explore Cities:
+              <span class="text-primary fw-bold replace-me"
+                >Seattle, Tacoma,Olympia
+              </span>
+            </h2>
+            <hr class="hr-heading" />
+            <p>
+              Washington has many great cities to visit. From the tech hub of
+              Seattle to the historic Olympia and the cultural Tacoma, there’s
+              something for everyone.
+            </p>
+          </div>
+
+          <div class="row mb-4">
+            <!--[] city 1 -->
+            <div class="col-lg-4">
+              <div class="card border-3 bg-body shadow-effect-in border-0">
+                <div class="image-item">
+                  <img
+                    src="images/seattleBg.jpg"
+                    class="img-fluid rounded-3"
+                    alt="Photo of Seattle Skyline"
+                  />
+                  <div class="overlay rounded-3"></div>
+                  <a
+                    href="https://www.pexels.com/@chaitaastic/"
+                    class="image-source"
+                    title="View Image"
+                  >
+                    <i class="fa-solid fa-link mx-2 icon-link"></i>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5 class="card-title text-success fw-bold">
+                      Seattle Washington
+                    </h5>
+                    <p class="card-text">
+                      Seattle is known for its technology companies like
+                      Microsoft and Amazon. It also has beautiful views and
+                      landmarks like the Space Needle.
+                    </p>
+                    <a href="seattle.html" class="btn btn-sm button-shadow"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--[] city 2 -->
+            <div class="col-lg-4">
+              <div class="card border-3 bg-body shadow-effect-in border-0">
+                <div class="image-item">
+                  <img
+                    src="images/olympia.jpg"
+                    class="img-fluid rounded-3"
+                    alt="Photo of tacoma washington"
+                  />
+                  <div class="overlay rounded-3"></div>
+                  <a
+                    href="https://thecareyadventures.com/blog/the-washington-state-capitol-dome-and-mt-rainier/"
+                    class="image-source"
+                    title="View Image"
+                  >
+                    <i class="fa-solid fa-link mx-2 icon-link"></i>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5 class="card-title text-success fw-bold">
+                      Olympia Washington
+                    </h5>
+                    <p class="card-text">
+                      Olympia is the state
+                      <span class="text-success fw-bold">capital</span>
+                      and has a beautiful Capitol building. It’s also surrounded
+                      by scenic parks and the Olympic Mountains.
+                    </p>
+                    <a href="olympia.html" class="btn btn-sm button-shadow"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--[] City 3 -->
+            <div class="col-lg-4">
+              <div class="card border-3 bg-body shadow-effect-in border-0">
+                <div class="image-item">
+                  <img
+                    src="images/tacoma.webp"
+                    class="img-fluid rounded-3"
+                    alt="Cityscape of Seattle and the View of Mount Rainier, United States"
+                  />
+                  <div class="overlay rounded-3"></div>
+                  <a
+                    href="https://www.pexels.com/@taylen-lundequam-393935458/"
+                    class="image-source"
+                    title="View Image"
+                  >
+                    <i class="fa-solid fa-link mx-2 icon-link"></i>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5 class="card-title text-success fw-bold">
+                      Tacoma Washington
+                    </h5>
+                    <p class="card-text">
+                      Tacoma is known for its museums, waterfront, and historic
+                      buildings. The Museum of Glass is one of its main
+                      attractions.
+                    </p>
+                    <a href="tacoma.html" class="btn btn-sm button-shadow"
+                      >Read More</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|>QUOTE II  -->
+      <section class="quote bg-secondary neu-effect py-6">
+        <div class="container">
+          <div class="row">
+            <h5 class="text-center">
+              <span
+                class="badge bg-primary rounded-3 text-uppercase p-2 shadow-effect-out"
+              >
+                quote II
+              </span>
+            </h5>
+            <div class="col-lg-8 offset-lg-2 text-center">
+              <h2 class="text-decor">The Beauty of Washington in Quotes</h2>
+              <p class="fs-5 fst-italic position-relative">
+                “There's nothing greener than Washington state. They have the
+                most beautiful vegetation on the planet. And the water is so
+                clean.”
+              </p>
+              <div class="fw-bold fs-5 mt-2">
+                Fabio Lanzoni
+                <i
+                  class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                  data-bs-placement="bottom"
+                  title="This Quote is from : <a href='https://www.brainyquote.com/quotes/fabio_lanzoni_1022451?src=t_washington' target='_blank'> Source</a>"
+                  data-bs-toggle="tooltip"
+                  data-bs-trigger="click"
+                >
+                </i>
+              </div>
+              <div>Italian - Actor</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|>LOCATION -->
+      <section class="about mt-6" id="location">
+        <div class="container shadow-effect-out p-5">
+          <!-- heading -->
+          <div class="row mb-4">
+            <h2>Discover <span class="text-primary mb-4">Washington</span></h2>
+            <hr class="hr-heading" />
+          </div>
+
+          <div class="row position-relative">
+            <!--[] MAP -->
+            <div class="col-lg-8 text-center">
+              <div class="map">
+                <iframe
+                  frameborder="0"
+                  scrolling="yes"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-124.848974%2C45.543541%2C-116.916667%2C49.002494&amp;layer=mapnik"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </div>
+
+            <!--[] BULLET POINTS ABOUT THE MAP -->
+            <aside class="aside-1 col-lg-4 d-flex flex-column">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>
+                      <span
+                        class="badge bg-success rounded-3 text-uppercase p-2 mb-3 shadow-effect-out"
+                      >
+                        Icon
+                      </span>
+                    </th>
+                    <th>
+                      <span
+                        class="badge bg-success rounded-3 text-uppercase p-2 mb-3 shadow-effect-out"
+                      >
+                        Map Information
+                      </span>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <i class="fas fa-map-marker-alt text-primary fa-2x"></i>
+                    </td>
+                    <td>
+                      The map highlights the entire state of Washington,
+                      including its diverse landscapes and major cities.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-map-pin text-primary fa-2x"></i></td>
+                    <td>
+                      Key locations on the map include Seattle, Tacoma, and
+                      Olympia.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-map-signs text-primary fa-2x"></i></td>
+                    <td>
+                      The map also shows the Columbia River and various national
+                      parks.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-compass text-primary fa-2x"></i></td>
+                    <td>
+                      The map provides a clear view of Washington's geographical
+                      layout, from the coast to the mountains.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- |>GALLERY -->
+      <section class="gallery py-6" id="gallery">
+        <div class="container shadow-effect-in p-5">
+          <!--[] HEADING-->
+          <div class="row mb-4">
+            <h2>
+              Washington
+              <span class="text-primary">Gallery</span>
+            </h2>
+            <hr class="hr-heading" />
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <!-- []IMG 1 -->
+              <div class="image-item">
+                <img
+                  src="images/wa-img-1.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Downtown City Street"
+                />
+                <a
+                  href="https://www.pexels.com/@josh-hild-1270765/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+
+                <div class="overlay"></div>
+              </div>
+              <!-- []IMG 2 -->
+              <div class="image-item">
+                <img
+                  src="images/wa-img-2.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Green Trees on Mountain"
+                />
+                <a
+                  href="https://www.pexels.com/@russell-combs-3157345/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- []IMG 3 -->
+              <div class="image-item">
+                <img
+                  src="images/wa-img-3.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Snow Covered Mountain during Sunset"
+                />
+                <a
+                  href="https://www.pexels.com/@mario-rodriguez-1814525/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+              <!-- []IMG 4 -->
+              <div class="image-item">
+                <img
+                  src="images/wa-img-4.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Boat Under Bridge With View of Mountains"
+                />
+                <a
+                  href="https://www.pexels.com/@romanp/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- []IMG 5 -->
+              <div class="image-item">
+                <img
+                  src="images/wa-img-6.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Wind Turbines in a Field"
+                />
+                <a
+                  href="https://www.pexels.com/@alfomedeiros/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+
+              <!-- []IMG 6 -->
+              <div class="image-item">
+                <img
+                  src="images/wa-img-5.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Silver, Futuristic Building Wall"
+                />
+                <a
+                  href="https://www.pexels.com/@brett-sayles/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--|> FOOTER  -->
+    <footer class="footer-dark text-white py-5 bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h5 class="text-primary">Menu</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h5 class="text-primary">Cities</h5>
+            <ul class="list-unstyled">
+              <li><a href="seattle.html">Seattle</a></li>
+              <li><a href="olympia.html">Olympia</a></li>
+              <li><a href="tacoma.html">Tacoma</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <p>
+              <img src="images/logo.svg" alt="logo" width="30" class="me-2" />
+
+              My name is Ali Aljanabi, a software engineering student at WGU.
+              I’m passionate about technology and eager to apply my skills in
+              real-world projects, focusing on software development and
+              problem-solving.
+            </p>
+          </div>
+          <div class="col item social mt-5">
+            <a href="#" class="icon-link"><i class="icon fab fa-github"></i></a
+            ><a href="#" class="icon-link"><i class="icon fab fa-x"></i></a
+            ><a href="#" class="icon-link"
+              ><i class="icon fab fa-snapchat"></i></a
+            ><a href="#" class="icon-link"
+              ><i class="icon fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <p class="copyright m-4">Copyright © 2024, All Rights Reserved</p>
+      </div>
+    </footer>
+    <!--|> TO-TOP BTN  -->
+    <button id="to-top" class="to-top-btn" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!--|> External JS Files -->
+    <script src="js/replaceme.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

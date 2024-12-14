@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.svg" />
+
+    <title>Welcome To Tacoma</title>
+  </head>
+  <body>
+    <!--|> NAVBAR  -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+      <div class="container shadow-effect-in p-3">
+        <!-- []LOGO -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="" width="40" />
+        </a>
+
+        <!--[] HAMBURGER ICON -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--[] MENU LIST  -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <!--|| HOME  -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <!--|| CITIES  -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cities
+              </a>
+              <!-- [] list -->
+              <ul
+                class="dropdown-menu rounded-3 bg-body border-0 p-4 text-lg-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-3 mx-0 rounded-3"
+                    href="seattle.html"
+                  >
+                    Seattle
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-2 mx-0 rounded-3"
+                    href="olympia.html"
+                  >
+                    Olympia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-2 mx-0 rounded-3"
+                    href="tacoma.html"
+                  >
+                    Tacoma
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--|| ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+
+            <!--||GALLERY   -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#gallery">Gallery</a>
+            </li>
+
+            <!--|| CONTACT  -->
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-success text-white px-4 mx-4"
+                href="contact.html"
+                >Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--|> HEADER SECTION -->
+    <header class="tacoma-header py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--[] LEFT SIDE OF HEADER -->
+          <div class="col-lg-8 col-md-12 p-5">
+            <!-- HEADING -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <span
+                  class="badge rounded-3 text-uppercase p-2 shadow-input text-primary fs-4 mb-3"
+                  >Urban</span
+                >
+                <h1 class="text-decor mb-2">Tacoma, Washington</h1>
+                <p class="lead mb-3">
+                  Located in the Puget Sound region of Washington State,
+                  southwest of Seattle
+                </p>
+                <hr class="hr-heading" />
+              </div>
+            </div>
+
+            <!-- NUMBERS ROW 1  -->
+            <div class="row p-5 shadow-effect-in text-center mt-4">
+              <!-- || STAT 1 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="1875"></h2>
+                <p class="text-success fw-semibold">Year Incorporated</p>
+              </div>
+
+              <!-- || STAT 2 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="222906"></h2>
+                <p class="text-success fw-semibold">Population</p>
+              </div>
+
+              <!-- || STAT 3 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="84986"></h2>
+                <p class="text-success fw-semibold">Average Income</p>
+              </div>
+
+              <!-- || STAT 4 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="62"></h2>
+                <p class="text-success fw-semibold">Area (Sq Miles)</p>
+              </div>
+            </div>
+          </div>
+
+          <!--[] RIGHT SIDE OF HEADER -->
+          <div class="col-lg-4 col-md-12 p-4">
+            <div class="image-item">
+              <img
+                src="images/tacoma-header.jpg"
+                alt="Tacoma harbor and Mount Rainier, Washington"
+              />
+              <div class="overlay"></div>
+              <a
+                href="https://www.freeimages.com/photo/tacoma-harbor-and-mount-rainier-washington-2340488"
+                class="image-source"
+                title="View Image"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-link mx-2 icon-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--|>INTRO  -->
+      <section class="intro mt-5 pb-6">
+        <div class="container">
+          <div class="row">
+            <h5 class="text-center">
+              <span
+                class="badge bg-primary rounded-3 text-uppercase p-2 shadow-effect-out"
+              >
+                popular places
+              </span>
+            </h5>
+
+            <div class="col-lg-8 offset-lg-2 text-center">
+              <h2>
+                Discover the <span class="text-success">Beauty</span> of Tacoma
+              </h2>
+              <p class="fs-5">
+                Tacoma is a lively city with a beautiful waterfront, creative
+                art scene, and rich history. Enjoy its mix of nature, culture,
+                and fun activities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|> place 1 -->
+      <section class="place">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4>
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place I
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">01</span> Dale Chihuly's
+                  Glass Art
+
+                  <a href="https://www.chihuly.com/">
+                    <i class="fa-solid fa-eye text-success"></i>
+                  </a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+
+                <p class="lead">
+                  The Chihuly Bridge of Glass is a 500-foot walkway filled with
+                  stunning glass sculptures. It connects the Museum of Glass to
+                  the Washington State History Museum, making it a free outdoor
+                  art display.
+
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://www.visitpiercecounty.com/regions/tacoma/museum-district/' target='_blank'>Dale Chihuly's
+                  Glass Art</a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/tacoma-place-1.jpg"
+                width="100%"
+                alt="glass art"
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://hoagonsight.com/the-wild-glass-gardens-of-dale-chihuly/"
+                  class="btn button-shadow btn-lg"
+                  >Photo by Hoag Levi
+                  <i class="fa-solid fa-image mx-2 text-success"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|> place 2  -->
+      <section class="place mt-6">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/tacoma-place-2.jpg"
+                width="100%"
+                alt="Pantages Theater"
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://evergreene.com/projects/pantages-theatre/"
+                  class="btn button-shadow btn-lg"
+                >
+                  Photo by Aaron Locke
+                  <i class="fa-solid fa-image mx-2 text-success"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4>
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place II
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">02</span> Pantages Theater
+                  <a href="https://www.tacomavenues.org/tacoma-city-theaters"
+                    ><i class="fa-solid fa-eye text-success"></i
+                  ></a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+
+                <p class="lead">
+                  The Pantages Theater opened in 1918 and was restored in 2018.
+                  It is one of Tacoma’s most famous landmarks, offering plays,
+                  concerts, and shows in a beautiful, historic building.
+
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://www.visitpiercecounty.com/regions/tacoma/theater-district/' target='_blank'>Pantages Theater</a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- |> place 3 -->
+      <section class="place pt-6">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4 class="text-start">
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place III
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">03</span>Mount Rainier
+                  <a href="https://www.nps.gov/mora/index.htm"
+                    ><i class="fa-solid fa-eye text-success"></i
+                  ></a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+
+                <p class="lead">
+                  Mount Rainier, also called Tahoma, is a giant volcano near
+                  Tacoma. It’s famous for its tall peaks, hiking trails, and
+                  amazing views, perfect for nature lovers and adventurers.
+
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://en.wikipedia.org/wiki/Mount_Rainier' target='_blank'>Mount Rainier</a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/tacoma-place-3.jpg"
+                width="100%"
+                alt="picture of mountain  "
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://pixabay.com/users/brookesaugust-1612622/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1030075"
+                  class="btn button-shadow btn-lg"
+                  >Photo by Brookesaugust
+                  <i class="fa-solid fa-image mx-2 text-success"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- |>Gallery -->
+      <section class="gallery my-6">
+        <div class="container shadow-effect-in p-5">
+          <!--[] HEADING-->
+          <div class="row mb-4">
+            <h2 class="text-decor">Tacoma Gallery</h2>
+            <hr class="hr-heading" />
+          </div>
+
+          <div class="row">
+            <!--[] column 1  -->
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <!-- img 1-->
+              <div class="image-item">
+                <img
+                  src="images/tacoma-img-1.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Brown Concrete Building With Blue Painted Windows"
+                />
+                <a
+                  href="https://www.pexels.com/@gochrisgoxyz/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+
+                <div class="overlay"></div>
+              </div>
+              <!-- img 2-->
+              <div class="image-item">
+                <img
+                  src="images/tacoma-img-2.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Street Sign"
+                />
+
+                <a
+                  href="https://unsplash.com/@jonlanzieri"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+
+            <!--[] column 2  -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- img 3-->
+              <div class="image-item">
+                <img
+                  src="images/tacoma-img-3.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Brown Concrete Building"
+                />
+                <a
+                  href="https://www.pexels.com/@bryce-carithers-11680701/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+              <!-- img 4-->
+              <div class="image-item">
+                <img
+                  src="images/tacoma-img-4.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Brown Wooden Dock"
+                />
+                <a
+                  href="https://www.pexels.com/@gochrisgoxyz/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+
+            <!--[] column 3  -->
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- img 5-->
+              <div class="image-item">
+                <img
+                  src="images/tacoma-img-5.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="Aerial View of Tacoma Narrows Bridge"
+                />
+                <a
+                  href="https://www.pexels.com/@josh-hild-1270765/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+              <!-- img 6-->
+              <div class="image-item">
+                <img
+                  src="images/tacoma-img-6.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="A Water Fountain in the Park"
+                />
+                <a
+                  href="https://www.pexels.com/@greg-thames-12409424/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--|> FOOTER  -->
+    <footer class="footer-dark text-white py-5 bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h5 class="text-primary">Menu</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h5 class="text-primary">Cities</h5>
+            <ul class="list-unstyled">
+              <li><a href="seattle.html">Seattle</a></li>
+              <li><a href="olympia.html">Olympia</a></li>
+              <li><a href="tacoma.html">Tacoma</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <p>
+              <img src="images/logo.svg" alt="logo" width="30" class="me-2" />
+
+              My name is Ali Aljanabi, a software engineering student at WGU.
+              I’m passionate about technology and eager to apply my skills in
+              real-world projects, focusing on software development and
+              problem-solving.
+            </p>
+          </div>
+          <div class="col item social mt-5">
+            <a href="#" class="icon-link"><i class="icon fab fa-github"></i></a
+            ><a href="#" class="icon-link"><i class="icon fab fa-x"></i></a
+            ><a href="#" class="icon-link"
+              ><i class="icon fab fa-snapchat"></i></a
+            ><a href="#" class="icon-link"
+              ><i class="icon fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <p class="copyright m-4">Copyright © 2024, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!--|> TO-TOP BTN  -->
+    <button id="to-top" class="to-top-btn" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="js/replaceme.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

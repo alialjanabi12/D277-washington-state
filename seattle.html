@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- External Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS Files -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.svg" />
+
+    <title>Welcome To Seattle</title>
+  </head>
+  <body>
+    <!--|> NAVBAR  -->
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
+      <div class="container shadow-effect-in p-3">
+        <!-- []LOGO -->
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.svg" alt="" width="40" />
+        </a>
+
+        <!--[] HAMBURGER ICON -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--[] MENU LIST  -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <!--|| HOME  -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+
+            <!--|| CITIES  -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cities
+              </a>
+              <!-- [] list -->
+              <ul
+                class="dropdown-menu rounded-3 bg-body border-0 p-4 text-lg-center"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-3 mx-0 rounded-3"
+                    href="seattle.html"
+                  >
+                    Seattle
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-2 mx-0 rounded-3"
+                    href="olympia.html"
+                  >
+                    Olympia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item p-2 mb-2 mx-0 rounded-3"
+                    href="tacoma.html"
+                  >
+                    Tacoma
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!--|| ABOUT -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+
+            <!--||GALLERY   -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#gallery">Gallery</a>
+            </li>
+
+            <!--|| CONTACT  -->
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-success text-white px-4 mx-4"
+                href="contact.html"
+                >Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--|> HEADER SECTION -->
+    <header class="seattle-header py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <!--[] LEFT SIDE OF HEADER -->
+          <div class="col-lg-8 col-md-12 p-5">
+            <!-- HEADING -->
+            <div class="row mb-4">
+              <div class="col-12">
+                <span
+                  class="badge rounded-3 text-uppercase p-2 shadow-input text-primary fs-4 mb-3"
+                  >Urban</span
+                >
+                <h1 class="text-decor mb-2">Seattle, Washington</h1>
+                <p class="lead mb-3">
+                  Located in the Western Washington region of the state,
+                  specifically in King County.
+                </p>
+                <hr class="hr-heading" />
+              </div>
+            </div>
+
+            <!-- NUMBERS ROW 1  -->
+            <div class="row p-5 shadow-effect-in text-center mt-4">
+              <!-- || STAT 1 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="1869"></h2>
+                <p class="text-success fw-semibold">Year Incorporated</p>
+              </div>
+
+              <!-- || STAT 2 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="769000"></h2>
+                <p class="text-success fw-semibold">Population</p>
+              </div>
+
+              <!-- || STAT 3 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="89000"></h2>
+                <p class="text-success fw-semibold">Average Income</p>
+              </div>
+
+              <!-- || STAT 4 -->
+              <div class="col-lg-3 col-md-6">
+                <h2 class="counter text-decor" data-target="38000000"></h2>
+                <p class="text-success fw-semibold">Yearly Tourist</p>
+              </div>
+            </div>
+          </div>
+
+          <!--[] RIGHT SIDE OF HEADER -->
+          <div class="col-lg-4 col-md-12 p-4">
+            <div class="image-item">
+              <img
+                src="images/seattle-header.jpg"
+                alt="Seattle waterfront with a ship sailing by"
+              />
+              <div class="overlay"></div>
+              <a
+                href="https://www.pexels.com/@jared-lung-503187/"
+                class="image-source"
+                title="View Image"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-link mx-2 icon-link"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!--|>INTRO  -->
+      <section class="intro mt-5 pb-6">
+        <div class="container">
+          <div class="row">
+            <h5 class="text-center">
+              <span
+                class="badge bg-primary rounded-3 text-uppercase p-2 shadow-effect-out"
+              >
+                popular places
+              </span>
+            </h5>
+
+            <div class="col-lg-8 offset-lg-2 text-center">
+              <h2>
+                Discover the <span class="text-success">Beauty</span> of Seattle
+              </h2>
+              <p class="fs-5">
+                Seattle is a city full of exciting places to visit, from its
+                iconic landmarks to its vibrant culture. Let’s explore some of
+                its most famous attractions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|> place 1 -->
+      <section class="place">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4>
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place I
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">01</span> Space Needle
+                  <a href="https://www.spaceneedle.com/">
+                    <i class="fa-solid fa-eye text-success"></i>
+                  </a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+
+                <p class="lead">
+                  The Space Needle, built for the 1962 World’s Fair, is a famous
+                  Seattle landmark standing 605 feet tall. You can ride an
+                  elevator to the top in just 43 seconds and enjoy amazing views
+                  of the city, mountains, and water.
+
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://en.wikipedia.org/wiki/Space_Needle' target='_blank'>Space Needle</a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/seattle-spaceNeedle.jpg"
+                width="100%"
+                alt="picture of Space needle "
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://www.pexels.com/@matthew-johnson-3923024/"
+                  class="btn button-shadow btn-lg"
+                  >Photo by Matthew Johnson
+                  <i class="fa-solid fa-image mx-2 text-success"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--|> place 2 -->
+      <section class="place mt-6">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/seattle-pikePlace.jpg"
+                width="100%"
+                alt="picture of pike place market"
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://www.pexels.com/@josh-hild-1270765/"
+                  class="btn button-shadow btn-lg"
+                  >Photo by Josh Hild
+                  <i class="fa-solid fa-image mx-2 text-success"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4>
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place II
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">02</span> Pike Place Market
+                  <a
+                    href="https://www.pikeplacemarket.org/about-pike-place-market/plan-your-visit/"
+                    ><i class="fa-solid fa-eye text-success"></i
+                  ></a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+
+                <p class="lead">
+                  Pike Place Market is one of Seattle's most popular places,
+                  filled with shops, restaurants, and street performers. It’s
+                  famous for its fresh seafood, flowers, and the first Starbucks
+                  store.
+
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://en.wikipedia.org/wiki/Pike_Place_Market' target='_blank'>Pike Place </a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!--|> place 3 -->
+      <section class="place pt-6">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- []DESCRIPTION -->
+            <aside class="col-lg-6 my-auto shadow-effect-in p-4">
+              <div class="aside-inner p-3">
+                <h4 class="text-start">
+                  <span
+                    class="badge bg-success rounded-3 text-uppercase p-2 shadow-effect-out"
+                  >
+                    place III
+                  </span>
+                </h4>
+
+                <h4 class="fw-bold d-flex align-items-center gap-3 mb-0">
+                  <span class="text-xl text-decor">03</span> Central Public
+                  Library
+                  <a
+                    href="https://www.spl.org/hours-and-locations/central-library/central-library-highlights"
+                    ><i class="fa-solid fa-eye text-success"></i
+                  ></a>
+                </h4>
+                <hr class="hr-heading mb-4" />
+
+                <p class="lead">
+                  Seattle's Central Public Library is a modern, glass-covered
+                  building designed by architect Rem Koolhaas. It’s a great
+                  place to read, study, and explore its large collection of
+                  books, movies, and more.
+                  <i
+                    class="fa-solid fa-circle-info icon-link text-bg-primary mx-0"
+                    data-bs-placement="bottom"
+                    title="Source: <a href='https://en.wikipedia.org/wiki/Seattle_Central_Library' target='_blank'>Central Public Library</a>"
+                    data-bs-toggle="tooltip"
+                    data-bs-trigger="click"
+                  ></i>
+                </p>
+              </div>
+            </aside>
+
+            <!-- []IMAGE -->
+            <div class="col-lg-6">
+              <img
+                src="images/seattle-Library.jpg"
+                width="100%"
+                alt="picture of Space needle "
+                class="rounded-3"
+              />
+              <div class="mt-3 d-grid text-center">
+                <a
+                  href="https://www.pexels.com/@willianjusten/"
+                  class="btn button-shadow btn-lg"
+                  >Photo by Willian Justen
+                  <i class="fa-solid fa-image mx-2 text-success"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- |>Gallery -->
+      <section class="gallery my-6">
+        <div class="container shadow-effect-in p-5">
+          <!--[] HEADING-->
+          <div class="row mb-4">
+            <h2 class="text-decor">Seattle Gallery</h2>
+            <hr class="hr-heading" />
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <!-- img 1-->
+              <div class="image-item">
+                <img
+                  src="images/seattle-img-1.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="seattle museum picture"
+                />
+                <a
+                  href="https://www.pexels.com/@brett-sayles/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+
+                <div class="overlay"></div>
+              </div>
+              <!-- img 2-->
+              <div class="image-item">
+                <img
+                  src="images/seattle-img-2.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="gas park of seattle picture"
+                />
+
+                <a
+                  href="https://pixabay.com/users/1010art-6568944/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- img 3-->
+              <div class="image-item">
+                <img
+                  src="images/seattle-img-3.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="university of washington main street picture"
+                />
+                <a
+                  href="https://www.pexels.com/@josh-hild-1270765/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+              <!-- img 4-->
+              <div class="image-item">
+                <img
+                  src="images/seattle-img-4.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="seattle great wheel picture"
+                />
+                <a
+                  href="https://www.pexels.com/@ibautista/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <!-- img 5-->
+              <div class="image-item">
+                <img
+                  src="images/seattle-img-5.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="downtown seattle bus routes"
+                />
+                <a
+                  href="https://www.pexels.com/@josh-hild-1270765/stats/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+              <!-- img 6-->
+              <div class="image-item">
+                <img
+                  src="images/seattle-img-6.jpg"
+                  class="w-100 shadow-1-strong"
+                  alt="columbia tower of seattle"
+                />
+                <a
+                  href="https://www.pexels.com/@josh-hild-1270765/stats/"
+                  class="image-source"
+                  title="View Image"
+                >
+                  <i class="fa-solid fa-link mx-2 icon-link"></i>
+                </a>
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--|> FOOTER  -->
+    <footer class="footer-dark text-white py-5 bg-success">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h5 class="text-primary">Menu</h5>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h5 class="text-primary">Cities</h5>
+            <ul class="list-unstyled">
+              <li><a href="seattle.html">Seattle</a></li>
+              <li><a href="olympia.html">Olympia</a></li>
+              <li><a href="tacoma.html">Tacoma</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <p>
+              <img src="images/logo.svg" alt="logo" width="30" class="me-2" />
+
+              My name is Ali Aljanabi, a software engineering student at WGU.
+              I’m passionate about technology and eager to apply my skills in
+              real-world projects, focusing on software development and
+              problem-solving.
+            </p>
+          </div>
+          <div class="col item social mt-5">
+            <a href="#" class="icon-link"><i class="icon fab fa-github"></i></a
+            ><a href="#" class="icon-link"><i class="icon fab fa-x"></i></a
+            ><a href="#" class="icon-link"
+              ><i class="icon fab fa-snapchat"></i></a
+            ><a href="#" class="icon-link"
+              ><i class="icon fab fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+        <p class="copyright m-4">Copyright © 2024, All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <!--|> TO-TOP BTN  -->
+    <button id="to-top" class="to-top-btn" aria-label="Scroll to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script src="js/replaceme.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
